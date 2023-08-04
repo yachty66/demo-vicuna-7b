@@ -27,7 +27,7 @@ def init() -> dict:
 @app.handler()
 def handler(context: dict, request: Request) -> Response:
     """Handle a request to generate text from a prompt."""
-    system = 'You are an AI assistant that follows instruction extremely well. Help as much as you can.'
+    system = "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user's questions."
     prompt = request.json.get("prompt")
     prompt_template = f"### System:\n{system}\n\n### User:\n{prompt}\n\n### Assistant:\n"
     temperature = request.json.get("temperature", 0.7)
