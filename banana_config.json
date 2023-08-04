@@ -1,0 +1,11 @@
+{
+    "name": "vicuna-7b",
+    "category": "",
+    "example_input": {
+        "instruction": "Hello, who are you?"
+    },
+    "example_output": {
+        "outputs": "Sure, here are three alternatives to your tweet on how AI is going to transform the world:  \n 1. \"AI is revolutionizing various industries, from healthcare to finance, and making our lives easier and more efficient. #AI #Transformation #Empowerment\" ..."
+    },
+    "version": "1"
+}

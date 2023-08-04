@@ -1,0 +1,3 @@
+potassium>=0.0.9
+torch
+transformers
