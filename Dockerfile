@@ -4,7 +4,6 @@ FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
 WORKDIR /
 
 # Install git and wget
-#RUN apt-get update && apt-get install -y git wgetp
 RUN apt-get update && apt-get install -y git wget
 
 # Upgrade pip
