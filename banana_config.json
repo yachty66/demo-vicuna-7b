@@ -5,7 +5,7 @@
         "instruction": "Hello, who are you?"
     },
     "example_output": {
-        "outputs": "Sure, here are three alternatives to your tweet on how AI is going to transform the world:  \n 1. \"AI is revolutionizing various industries, from healthcare to finance, and making our lives easier and more efficient. #AI #Transformation #Empowerment\" ..."
+        "outputs": "{<s> ### System:\nYou are an AI assistant that follows instruction extremely well. Help as much as you can.\n\n### User:\nHello, who are you?\n\n### Assistant:\nI am an AI assistant, my name is Assistant. How can I assist you today?</s>}"
     },
     "version": "1"
 }

@@ -41,7 +41,7 @@ docker run --publish 8000:8000 -it banana-vicuna-7b
 In another terminal, run inference after the above is built and running.
 
 ```sh
-curl -X POST -H 'Content-Type: application/json' -d '{"prompt": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user\'s questions.\n\nUSER: Hello, who are you?\nASSISTANT:\n"}' http://localhost:8000
+curl -X POST -H 'Content-Type: application/json' -d '{"Hello, who are you?}' http://localhost:8000
 ```
 
 ### Without Docker (not recommended)
@@ -59,5 +59,5 @@ python3 app.py
 Call the model in another terminal window with the Potassium app still running from the previous step.
 
 ```sh
-curl -X POST -H 'Content-Type: application/json' -d '{"prompt": "A chat between a curious user and an artificial intelligence assistant. The assistant gives helpful, detailed, and polite answers to the user\'s questions.\n\nUSER: Hello, who are you?\nASSISTANT:\n"}' http://localhost:8000
+curl -X POST -H 'Content-Type: application/json' -d '{"prompt": "Hello, who are you?"}' http://localhost:8000
 ```
