@@ -11,7 +11,7 @@ RUN pip install --upgrade pip
 
 # Download and install specific version of AutoGPTQ from GitHub release
 RUN wget https://github.com/PanQiWei/AutoGPTQ/releases/download/v0.3.2/auto_gptq-0.3.2+cu117-cp38-cp38-linux_x86_64.whl && \
-    pip3 install auto_gptq-0.3.2+cu117-cp38-cp38-linux_x86_64.whl
+    GITHUB_ACTIONS=true pip3 install auto_gptq-0.3.2+cu117-cp38-cp38-linux_x86_64.whl
 
 ADD requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt

@@ -1,5 +1,4 @@
 {
-    "name": "vicuna-7b",
     "inputs": [
         {
             "name": "prompt",
@@ -7,6 +6,5 @@
             "type": "string",
             "required": true
         }
-    ],
-    "version": "1"
+    ]
 }
