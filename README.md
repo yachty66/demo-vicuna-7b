@@ -41,7 +41,7 @@ docker run --publish 8000:8000 -it banana-vicuna-7b
 In another terminal, run inference after the above is built and running.
 
 ```sh
-curl -X POST -H 'Content-Type: application/json' -d '{"Hello, who are you?}' http://localhost:8000
+curl -X POST -H 'Content-Type: application/json' -d '{"prompt":"Hello, who are you?}' http://localhost:8000
 ```
 
 ### Without Docker (not recommended)
