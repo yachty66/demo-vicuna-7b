@@ -19,10 +19,11 @@ def init() -> dict:
         device=DEVICE,
         use_triton=False,
         quantize_config=None)
-    return {
+    context = {
         "model": model,
         "tokenizer": tokenizer
     }
+    return context
     
 @app.handler()
 def handler(context: dict, request: Request) -> Response:
